@@ -22,6 +22,7 @@ function install_swfrender()
 		./configure && 
 		cd lib && make libbase.a && cd ../src && 
 		make swfrender && sudo cp swfrender "${install_dir}"
+		make swfdump && sudo cp swfdump "${install_dir}"
 	popd
 }
 
